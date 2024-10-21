@@ -15,6 +15,22 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('book.index')" :active="request()->routeIs('book.*')">
+                        {{ __('Buku') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('member.index')" :active="request()->routeIs('member.*')">
+                        {{ __('Member') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('borrow.index')" :active="request()->routeIs('borrow.*')">
+                        {{ __('Peminjaman') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('returned.index')" :active="request()->routeIs('returned.*')">
+                        {{ __('Pengembalian') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -69,6 +85,22 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('book.index')" :active="request()->routeIs('book.*')">
+                {{ __('Buku') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('member.index')" :active="request()->routeIs('member.*')">
+                {{ __('Member') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('borrow.index')" :active="request()->routeIs('borrow.*')">
+                {{ __('Peminjaman') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('returned.index')" :active="request()->routeIs('returned.*')">
+                {{ __('Pengembalian') }}
             </x-responsive-nav-link>
         </div>
 
